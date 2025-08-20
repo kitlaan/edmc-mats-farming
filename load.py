@@ -88,7 +88,7 @@ def journal_entry(
     """
     force_reload = False
 
-    if entry["event"] == "ShutDown":
+    if entry["event"] in ["ShutDown", "Shutdown"]:
         clear_mats()
     elif this.tracked_location:
         if (
