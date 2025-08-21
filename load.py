@@ -112,11 +112,14 @@ def journal_entry(
         or force_reload
     ):
         for mat, ui_text in this.ui_tracked_mats.items():
-            state_materials = state.get(mat.type, {})
-            if mat.key in state_materials:
-                max_qty = grade_to_max(MATERIALS[mat]["grade"])
-                count = min(max_qty, state_materials[mat.key])
-                ui_text.set(f"{count}")
+            state_materials = state.get(mat.type)
+            if state_materials is not None:
+                if mat.key in state_materials:
+                    max_qty = grade_to_max(MATERIALS[mat]["grade"])
+                    count = min(max_qty, state_materials[mat.key])
+                    ui_text.set(f"{count}")
+                else:
+                    ui_text.set("0")
 
     return None
 
