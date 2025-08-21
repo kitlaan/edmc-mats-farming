@@ -158,8 +158,8 @@ def setup_mats(location: LocationInfo) -> None:
         tk.Label(this.ui_mats, textvariable=ui_text).grid(
             row=row, column=0, sticky=tk.E
         )
-        tk.Label(this.ui_mats, text=f"({max_qty})").grid(row=row, column=1, sticky=tk.E)
-        tk.Label(this.ui_mats, text=f"{mat_name} ({mat_grade})").grid(
+        tk.Label(this.ui_mats, text=f"/{max_qty}").grid(row=row, column=1, sticky=tk.E)
+        tk.Label(this.ui_mats, text=f"G{mat_grade} {mat_name}").grid(
             row=row, column=2, sticky=tk.W
         )
         row += 1
