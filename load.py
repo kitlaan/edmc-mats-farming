@@ -153,6 +153,7 @@ def setup_mats(location: LocationInfo) -> None:
         if not material:
             continue
 
+        # TODO: how do we get Name_Localised for things not collected?
         mat_name = material["name"]
         mat_grade = material["grade"]
         max_qty = grade_to_max(material["grade"])
