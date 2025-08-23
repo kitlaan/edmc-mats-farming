@@ -18,5 +18,5 @@ materials at the site, and the current quantities collected.
 
 ## Notes
 
-Requires EDMC 4.1.0 (Python 3.10+).
-(Tested vith EDMC 5.13.)
+Requires Python 3.11+ (EDMC 5.7.0+).
+Developed starting with EDMC 5.13.0, so YMMV.
