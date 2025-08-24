@@ -22,6 +22,7 @@ class LocationInfo(TypedDict):
     name: str
     system: str
     body: str
+    coords: list[tuple[float, float]]
     materials: list[Material]
     trader: Optional[StationInfo]
 
@@ -373,6 +374,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Jameson Crash Site",
             "system": "HIP 12099",
             "body": "HIP 12099 1 b",
+            "coords": [(-54.37, -50.35)],
             "materials": [
                 ENC_ADAPTIVEENCRYPTORS,
                 ENC_ENCRYPTIONARCHIVES,
@@ -389,6 +391,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Dav's Hope",
             "system": "Hyades Sector DR-V c2-23",
             "body": "Hyades Sector DR-V c2-23 A 5",
+            "coords": [(50.53, 137.43)],
             "materials": [
                 MFG_CHEMICALMANIPULATORS,
                 MFG_COMPOUNDSHIELDING,
@@ -417,6 +420,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Crashed Anaconda",
             "system": "Koli Discii",
             "body": "Koli Discii C 6 a",
+            "coords": [(28.57, 7.21)],
             "materials": [
                 RAW_ANTIMONY,
                 RAW_RUTHENIUM,
@@ -433,6 +437,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Crashed Anaconda",
             "system": "Orrere",
             "body": "Orrere 2 b",
+            "coords": [(43.82, -173.98)],
             "materials": [
                 RAW_ANTIMONY,
                 RAW_RUTHENIUM,
@@ -449,6 +454,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "35 G. Carinae",
             "body": "35 G. Carinae 1 e",
+            "coords": [(-45.4, -136.0)],
             "materials": [
                 RAW_ANTIMONY,
                 RAW_CADMIUM,
@@ -461,6 +467,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "35 G. Carinae",
             "body": "35 G. Carinae 2 a",
+            "coords": [(42.95, -155.74)],
             "materials": [
                 RAW_TECHNETIUM,
                 RAW_NIOBIUM,
@@ -473,6 +480,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "35 G. Carinae",
             "body": "35 G. Carinae 2 c",
+            "coords": [(-48.82, 2.72)],
             "materials": [
                 RAW_RUTHENIUM,
                 RAW_MOLYBDENUM,
@@ -485,6 +493,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "35 G. Carinae",
             "body": "35 G. Carinae 2 d",
+            "coords": [(37.92, -136.93)],
             "materials": [
                 RAW_YTTRIUM,
                 RAW_NIOBIUM,
@@ -499,6 +508,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "HR 3230",
             "body": "HR 3230 3 a a",
+            "coords": [(17.89, 173.34)],
             "materials": [
                 RAW_SELENIUM,
                 RAW_TECHNETIUM,
@@ -514,6 +524,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "Synuefe SE-V b49-4",
             "body": "Synuefe SE-V b49-4 B 3 a",
+            "coords": [(-50.97, 63.98), (-51.48, 63.90)],
             "materials": [
                 RAW_SELENIUM,
                 RAW_TELLURIUM,
@@ -529,6 +540,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "name": "Brain Tree",
             "system": "Synuefe AA-P c22-7",
             "body": "Synuefe AA-P c22-7 5 c",
+            "coords": [(28.97, 133.48)],
             "materials": [
                 RAW_POLONIUM,
                 RAW_MOLYBDENUM,
