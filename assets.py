@@ -549,4 +549,48 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
     ],
+    # https://wiki.antixenoinitiative.com/en/engineering-materials#crystal-shard-farming
+    # https://sites.google.com/view/elite-materials/collection/raw-materials
+    "HIP 36601": [
+        {
+            "name": "Crystalline Shard",
+            "system": "HIP 36601",
+            "body": "HIP 36601 C 1 a",
+            "coords": [(-31.03, 14.85), (-57.46, 126.95)],
+            "materials": [
+                RAW_POLONIUM,
+            ],
+            "trader": None,
+        },
+        {
+            "name": "Crystalline Shard",
+            "system": "HIP 36601",
+            "body": "HIP 36601 C 1 d",
+            "coords": [(7.24, -37.66), (10.70, -35.75), (-51.26, 14.73)],
+            "materials": [
+                RAW_RUTHENIUM,
+            ],
+            "trader": None,
+        },
+        {
+            "name": "Crystalline Shard",
+            "system": "HIP 36601",
+            "body": "HIP 36601 C 3 b",
+            "coords": [(36.88, -75.51), (-17.68, -55.18)],
+            "materials": [
+                RAW_TELLURIUM,
+            ],
+            "trader": None,
+        },
+        {
+            "name": "Crystalline Shard",
+            "system": "HIP 36601",
+            "body": "HIP 36601 C 5 a",
+            "coords": [(6.82, -23.81), (6.87, -22.99), (3.55, -55.18)],
+            "materials": [
+                RAW_TECHNETIUM,
+            ],
+            "trader": None,
+        },
+    ],
 }
