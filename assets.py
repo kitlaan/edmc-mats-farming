@@ -516,7 +516,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
             "body": "Synuefe SE-V b49-4 B 3 a",
             "materials": [
                 RAW_SELENIUM,
-                RAW_TECHNETIUM,
+                RAW_TELLURIUM,
                 RAW_NIOBIUM,
                 RAW_MERCURY,
             ],
