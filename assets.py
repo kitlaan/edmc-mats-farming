@@ -428,7 +428,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_TUNGSTEN,
                 RAW_ZIRCONIUM,
             ],
-            "trader": None,
+            "trader": {"system": "Soyota", "station": "Gohar Hub"},
         }
     ],
     "Orrere": [
@@ -445,7 +445,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_TUNGSTEN,
                 RAW_ZIRCONIUM,
             ],
-            "trader": None,
+            "trader": {"system": "Ritila", "station": "Kennedy Dock"},
         }
     ],
     "35 G. Carinae": [
@@ -460,7 +460,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_CADMIUM,
                 RAW_MOLYBDENUM,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
         # https://www.reddit.com/r/EliteDangerous/comments/1j7otmi/update_41_raw_materials_collection_no_relog/
         {
@@ -473,7 +473,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_NIOBIUM,
                 RAW_TIN,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
         # https://www.reddit.com/r/EliteDangerous/comments/1j7otmi/update_41_raw_materials_collection_no_relog/
         {
@@ -486,7 +486,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_MOLYBDENUM,
                 RAW_TUNGSTEN,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
         # https://www.reddit.com/r/EliteDangerous/comments/1j7otmi/update_41_raw_materials_collection_no_relog/
         {
@@ -499,7 +499,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_NIOBIUM,
                 RAW_TUNGSTEN,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
     ],
     "HR 3230": [
@@ -515,7 +515,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_NIOBIUM,
                 RAW_TIN,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 38235", "station": "Pytheas Dock"},
         },
     ],
     "Synuefe SE-V b49-4": [
@@ -531,7 +531,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_NIOBIUM,
                 RAW_MERCURY,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
     ],
     "Synuefe AA-P c22-7": [
@@ -546,7 +546,7 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
                 RAW_MOLYBDENUM,
                 RAW_TIN,
             ],
-            "trader": None,
+            "trader": {"system": "HIP 31666", "station": "Shunkai Orbital"},
         },
     ],
 }
