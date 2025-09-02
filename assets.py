@@ -238,37 +238,37 @@ MATERIALS: Mapping[Material, MaterialInfo] = {
     #######################################################
     #
     # Raw: Category 1:
-    RAW_CARBON: {"grade": 1, "name": "carbon"},
-    RAW_VANADIUM: {"grade": 2, "name": "vanadium"},
+    RAW_CARBON: {"grade": 1, "name": "Carbon"},
+    RAW_VANADIUM: {"grade": 2, "name": "Vanadium"},
     RAW_NIOBIUM: {"grade": 3, "name": "Niobium"},
     RAW_YTTRIUM: {"grade": 4, "name": "Yttrium"},
     # Raw: Category 2:
-    RAW_PHOSPHORUS: {"grade": 1, "name": "phosphorus"},
-    RAW_CHROMIUM: {"grade": 2, "name": "chromium"},
+    RAW_PHOSPHORUS: {"grade": 1, "name": "Phosphorus"},
+    RAW_CHROMIUM: {"grade": 2, "name": "Chromium"},
     RAW_MOLYBDENUM: {"grade": 3, "name": "Molybdenum"},
     RAW_TECHNETIUM: {"grade": 4, "name": "Technetium"},
     # Raw: Category 3:
-    RAW_SULPHUR: {"grade": 1, "name": "sulphur"},
-    RAW_MANGANESE: {"grade": 2, "name": "manganese"},
+    RAW_SULPHUR: {"grade": 1, "name": "Sulphur"},
+    RAW_MANGANESE: {"grade": 2, "name": "Manganese"},
     RAW_CADMIUM: {"grade": 3, "name": "Cadmium"},
     RAW_RUTHENIUM: {"grade": 4, "name": "Ruthenium"},
     # Raw: Category 4:
-    RAW_IRON: {"grade": 1, "name": "iron"},
-    RAW_ZINC: {"grade": 2, "name": "zinc"},
+    RAW_IRON: {"grade": 1, "name": "Iron"},
+    RAW_ZINC: {"grade": 2, "name": "Zinc"},
     RAW_TIN: {"grade": 3, "name": "Tin"},
     RAW_SELENIUM: {"grade": 4, "name": "Selenium"},
     # Raw: Category 5:
-    RAW_NICKEL: {"grade": 1, "name": "nickel"},
-    RAW_GERMANIUM: {"grade": 2, "name": "germanium"},
+    RAW_NICKEL: {"grade": 1, "name": "Nickel"},
+    RAW_GERMANIUM: {"grade": 2, "name": "Germanium"},
     RAW_TUNGSTEN: {"grade": 3, "name": "Tungsten"},
     RAW_TELLURIUM: {"grade": 4, "name": "Tellurium"},
     # Raw: Category 6:
-    RAW_RHENIUM: {"grade": 1, "name": "rhenium"},
-    RAW_ARSENIC: {"grade": 2, "name": "arsenic"},
+    RAW_RHENIUM: {"grade": 1, "name": "Rhenium"},
+    RAW_ARSENIC: {"grade": 2, "name": "Arsenic"},
     RAW_MERCURY: {"grade": 3, "name": "Mercury"},
     RAW_POLONIUM: {"grade": 4, "name": "Polonium"},
     # Raw: Category 7:
-    RAW_LEAD: {"grade": 1, "name": "lead"},
+    RAW_LEAD: {"grade": 1, "name": "Lead"},
     RAW_ZIRCONIUM: {"grade": 2, "name": "Zirconium"},
     RAW_BORON: {"grade": 3, "name": "Boron"},
     RAW_ANTIMONY: {"grade": 4, "name": "Antimony"},
