@@ -15,6 +15,12 @@ materials at the site, and the current quantities collected.
   * HR 3230 : 3 a a
   * Synuefe AA-P c22-7 : 5 c
   * Synuefe SE-V b49-4 : B 3 a
+* Crystal Shards
+  * HIP 36601 : C 1 a, C 1 d, C 3 b, C 5 a
+* High Grade Emissions
+  * 10-million population (sources say 1-million, but being more conservative)
+  * Allegiance: Federation, Empire
+  * Faction State: Boom, Civil Unrest, Civil War, Outbreak, War
 
 ## Notes
 
