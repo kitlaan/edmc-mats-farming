@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+import pathlib
 import tkinter as tk
 from typing import Any, Dict, Optional
 
@@ -39,6 +40,10 @@ def plugin_start3(plugin_dir: str) -> str:
     :param plugin_dir: Name of directory this was loaded from.
     :return: Identifier string for this plugin.
     """
+    # In prod, don't include DEBUG logging
+    if not get_local_file(".git"):
+        logger.setLevel(logging.INFO)
+
     return plugin_name
 
 
@@ -195,3 +200,9 @@ def grade_to_max(grade: int) -> int:
             return 100
         case _:
             return 0
+
+
+def get_local_file(filename: str) -> Optional[pathlib.Path]:
+    plugin_dir = pathlib.Path(__file__).parent
+    filepath = plugin_dir / filename
+    return filepath if filepath.is_file() else None
