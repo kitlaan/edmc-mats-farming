@@ -1,4 +1,4 @@
-from typing import Literal, Mapping, NamedTuple, Optional, TypedDict
+from typing import Literal, Mapping, NamedTuple, NotRequired, Optional, TypedDict
 
 MaterialType = Literal["Raw", "Manufactured", "Encoded"]
 
@@ -25,6 +25,16 @@ class LocationInfo(TypedDict):
     coords: list[tuple[float, float]]
     materials: list[Material]
     trader: Optional[StationInfo]
+
+
+AllegienceState = Literal["Empire", "Federation"]
+FactionState = Literal["Boom", "CivilUnrest", "CivilWar", "Outbreak", "War"]
+
+
+class EmissionInfo(TypedDict):
+    allegiance: NotRequired[AllegienceState]
+    factionState: NotRequired[FactionState]
+    materials: list[Material]
 
 
 ENC_ADAPTIVEENCRYPTORS = Material("Encoded", "adaptiveencryptors")
@@ -594,3 +604,55 @@ LOCATIONS: Mapping[str, list[LocationInfo]] = {
         },
     ],
 }
+
+# https://edgalaxy.net/hge
+EMISSIONS: list[EmissionInfo] = [
+    {
+        "allegiance": "Federation",
+        "materials": [
+            MFG_FEDCORECOMPOSITES,
+            MFG_FEDPROPRIETARYCOMPOSITES,
+        ],
+    },
+    {
+        "allegiance": "Empire",
+        "materials": [
+            MFG_IMPERIALSHIELDING,
+        ],
+    },
+    {
+        "factionState": "CivilUnrest",
+        "materials": [
+            MFG_IMPROVISEDCOMPONENTS,
+        ]
+    },
+    {
+        "factionState": "War",
+        "materials": [
+            MFG_MILITARYGRADEALLOYS,
+            MFG_MILITARYSUPERCAPACITORS,
+        ]
+    },
+    {
+        "factionState": "CivilWar",
+        "materials": [
+            MFG_MILITARYGRADEALLOYS,
+            MFG_MILITARYSUPERCAPACITORS,
+        ],
+    },
+    {
+        "factionState": "Outbreak",
+        "materials": [
+            MFG_PHARMACEUTICALISOLATORS,
+        ]
+    },
+    {
+        "factionState": "Boom",
+        "materials": [
+            MFG_PROTOHEATRADIATORS,
+            MFG_PROTORADIOLICALLOYS,
+            MFG_PROTOLIGHTALLOYS,
+        ],
+    },
+]
+
