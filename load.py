@@ -199,7 +199,7 @@ def journal_entry(
             setup_status(location["name"])
             setup_mats(location["materials"])
             force_reload = True
-        elif emissions:
+        elif emissions or this.saw_uss_hge:
             logger.debug(f"Tracking new emission: {emissions}")
             this.tracked_emission = {
                 "system": system,
